@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#E8F5E9">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RelativeLayout - alignParentTop"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#C8E6C9"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button A"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:background="#A5D6A7"/>
+
+    <Button
+        android:id="@+id/btnB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button B (right of A)"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/btnA"
+        android:layout_marginStart="16dp"
+        android:background="#81C784"/>
+
+    <TextView
+        android:id="@+id/labelBelow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView below Button A"
+        android:layout_below="@id/btnA"
+        android:layout_marginTop="20dp"
+        android:background="#66BB6A"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This view is ABOVE the bottom button"
+        android:layout_above="@id/bottomBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:background="#B2DFDB"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/bottomBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bottom Button (alignParentBottom)"
+        android:layout_alignParentBottom="true"
+        android:background="#4DB6AC"/>
+</RelativeLayout>
