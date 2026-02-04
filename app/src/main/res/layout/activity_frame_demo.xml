@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFDE7"
+    android:foregroundGravity="center"
+    android:measureAllChildren="true">
+
+    <!-- Bottom layer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#FFCC80"/>
+
+    <!-- Middle layer -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FrameLayout stacks views"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:background="#FFE0B2"
+        android:padding="10dp"/>
+
+    <!-- Top layer -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Button"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="12dp"
+        android:background="#FFB74D"/>
+</FrameLayout>

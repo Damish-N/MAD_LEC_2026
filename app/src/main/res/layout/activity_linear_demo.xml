@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    android:background="#E3F2FD">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LinearLayout (Vertical) - weightSum=10, gravity=center_horizontal"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Horizontal row using weights -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:background="#BBDEFB"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="3/10"
+            android:background="#90CAF9"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:text="7/10"
+            android:layout_marginStart="8dp"
+            android:background="#64B5F6"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button under row"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
