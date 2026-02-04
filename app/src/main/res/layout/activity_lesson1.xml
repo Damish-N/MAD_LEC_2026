@@ -19,4 +19,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Views "/>
+
+    <Button
+        android:id="@+id/btnLesson1Layouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Layouts"
+        android:layout_marginTop="12dp"/>
+
 </LinearLayout>

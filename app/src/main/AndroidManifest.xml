@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".lesson1.LinearDemoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lesson1.Lesson1Layouts"
+            android:exported="false" />
+        <activity
             android:name=".lesson1.Lesson1Views"
             android:exported="false" />
         <activity
