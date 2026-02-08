@@ -17,5 +17,6 @@ public class ConstraintDemoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_constraint_demo);
+        System.out.println("Hello");
     }
 }
