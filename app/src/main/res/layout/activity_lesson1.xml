@@ -27,4 +27,19 @@
         android:text="Layouts"
         android:layout_marginTop="12dp"/>
 
+    <Button
+        android:id="@+id/btnLesson1LifeCycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity Life Cycle"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/btnLesson1Intends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intends"
+        android:layout_marginTop="12dp"/>
+
+
 </LinearLayout>

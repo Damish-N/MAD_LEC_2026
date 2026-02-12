@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".lesson1.SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lesson1.ActivityLifeCycle"
+            android:exported="false" />
+        <activity
             android:name=".lesson1.ConstraintDemoActivity"
             android:exported="false" />
         <activity

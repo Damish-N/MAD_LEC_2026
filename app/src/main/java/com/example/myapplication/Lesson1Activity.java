@@ -10,6 +10,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.myapplication.lesson1.ActivityLifeCycle;
 import com.example.myapplication.lesson1.Lesson1Layouts;
 import com.example.myapplication.lesson1.Lesson1Views;
 
@@ -24,6 +25,8 @@ public class Lesson1Activity extends AppCompatActivity {
 
         Button btnLesson2 = findViewById(R.id.btnLesson1Layouts);
 
+        Button btnLessonLifeCycle = findViewById(R.id.btnLesson1LifeCycle);
+
         btnLesson1.setOnClickListener(v -> {
             Intent intent = new Intent(this, Lesson1Views.class);
             startActivity(intent);
@@ -31,6 +34,11 @@ public class Lesson1Activity extends AppCompatActivity {
 
         btnLesson2.setOnClickListener(v -> {
             Intent intent = new Intent(this, Lesson1Layouts.class);
+            startActivity(intent);
+        });
+
+        btnLessonLifeCycle.setOnClickListener(v -> {
+            Intent intent = new Intent(this, ActivityLifeCycle.class);
             startActivity(intent);
         });
     }
