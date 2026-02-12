@@ -1,6 +1,7 @@
 package com.example.myapplication.lesson1;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,13 +11,15 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.myapplication.R;
 
-public class ConstraintDemoActivity extends AppCompatActivity {
+public class SecondActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_constraint_demo);
-        System.out.println("Hello-Lesson-1");
+        setContentView(R.layout.activity_second);
+    }
+
+    public void goBack(View view) {
+        finish();
     }
 }

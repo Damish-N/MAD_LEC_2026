@@ -9,36 +9,22 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lessons 1"
+        android:text="Intents"
         android:textSize="22sp"
         android:textStyle="bold"
         android:layout_marginBottom="24dp"/>
-
     <Button
-        android:id="@+id/btnLesson1Views"
+        android:id="@+id/explicitIntent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Views "/>
-
-    <Button
-        android:id="@+id/btnLesson1Layouts"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Layouts"
+        android:text="Explicit Intent"
         android:layout_marginTop="12dp"/>
 
     <Button
-        android:id="@+id/btnLesson1LifeCycle"
+        android:id="@+id/implicitIntent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Activity Life Cycle"
-        android:layout_marginTop="12dp"/>
-
-    <Button
-        android:id="@+id/btnLesson1Intends"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Intends"
+        android:text="Implicit Intent"
         android:layout_marginTop="12dp"/>
 
 
