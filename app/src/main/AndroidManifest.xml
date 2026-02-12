@@ -11,6 +11,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
+        <activity android:name=".lesson1.ImplicitIntentActivity" android:exported="false"
+            tools:ignore="AppLinkUrlError">
+            <intent-filter>
+            <action android:name="android.intent.action.VIEW"
+                tools:ignore="AppLinkUrlError" />
+            <category android:name="android.intent.category.DEFAULT"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".lesson1.ExplicitIntentSecondActivityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lesson1.ExplicitIntentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lesson1.Lesson1Intents"
+            android:exported="false" />
         <activity
             android:name=".lesson1.SecondActivity"
             android:exported="false" />
@@ -19,9 +38,6 @@
             android:exported="false" />
         <activity
             android:name=".lesson1.ConstraintDemoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".lesson1.FrameDemoActivity"
             android:exported="false" />
         <activity
             android:name=".lesson1.RelativeDemoActivity"
