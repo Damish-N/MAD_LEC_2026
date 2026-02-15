@@ -11,15 +11,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".lesson1.ImplicitIntentActivity" android:exported="false"
+        <activity
+            android:name=".Lesson2.LessonTwoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lesson1.ImplicitIntentActivity"
+            android:exported="false"
             tools:ignore="AppLinkUrlError">
             <intent-filter>
-            <action android:name="android.intent.action.VIEW"
-                tools:ignore="AppLinkUrlError" />
-            <category android:name="android.intent.category.DEFAULT"/>
-            <category android:name="android.intent.category.BROWSABLE"/>
-            <data android:scheme="https"/>
-        </intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW"
+                    tools:ignore="AppLinkUrlError" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="https" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".lesson1.ExplicitIntentSecondActivityActivity"
