@@ -9,10 +9,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.FragmentActivity;
+
+import com.example.myapplication.Lesson2.LessonTwoActivity;
+import com.example.myapplication.Lesson2.TestFragment;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button button;
+    Button button,buttonLesson2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,5 +28,14 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, Lesson1Activity.class);
             startActivity(intent);
         });
+
+        buttonLesson2 = findViewById(R.id.btnLesson2);
+
+        buttonLesson2.setOnClickListener(
+                v->{
+                    Intent intent1 = new Intent(MainActivity.this, LessonTwoActivity.class);
+                    startActivity(intent1);
+                }
+        );
     }
 }
